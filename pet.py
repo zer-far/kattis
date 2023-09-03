@@ -1,9 +1,9 @@
-grades = []
+points = []
 
 for i in range(5):
-	grades.append(sum(map(int, input().split())))
+	points.append(sum(map(int, input().split())))
 
-points = max(grades)
-winner = grades.index(points) + 1
+winner_points = max(points)
+winner = points.index(winner_points) + 1
 
-print(winner, points)
+print(winner, winner_points)
