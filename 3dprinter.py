@@ -1,5 +1,7 @@
+import math
+
 n = int(input())
-d = 1
-while 2 ** (d - 1) < n:
-    d += 1
-print(d)
+
+days = math.ceil(math.log(n) / math.log(2)) + 1
+
+print(days)
